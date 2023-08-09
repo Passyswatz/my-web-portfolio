@@ -7,9 +7,12 @@ export default function Home() {
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800' >
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className='flex flex-col justify-center h-full'>
-          <h2 className='text-4xl sm:text-7xl font-bold text-white'>I'm a Frontend engineer</h2>
-          <p className='text-white py-4 max-w-md'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati rerum officiis non fugit autem eveniet illum, earum eum odit voluptates culpa 
-            vel cum vitae? Vero adipisci quidem dolor facilis maxime.
+          <h2 className='text-4xl sm:text-5xl font-bold text-white'>Greetings, I'm Paschal Og - your dedicated Frontend Developer</h2>
+          <p className='text-white py-4 max-w-md'>My expertise lies in crafting cutting-edge mobile applications and websites that set trends and captivate users. I thrive on collaborative development, 
+          joining forces with fellow creators to deliver top-tier mobile and web experiences. Explore my portfolio to witness my latest endeavors. Operating remotely from UTC−1 to UTC+8.
+           Reach me on WhatsApp at +234 909 251 3945 or connect via email at passyswatz@gmail.com.
+
+Let's build something remarkable together.
           </p>
          <div>
          <button className='group text-white w-fit px-6 py-3 my-2
