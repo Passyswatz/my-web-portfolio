@@ -7,13 +7,29 @@ export default function Portfolio() {
   const portfolios = [
     {
       id:1,
-      src:Moviesearch
+      src:Moviesearch,
+      demo : "https://paschalmoviesearch.netlify.app/",
+      code: "https://github.com/Passyswatz/movie-search-app",
     },
     {
       id:2,
-      src:Statpreview
+      src:Statpreview,
+      demo: "https://passyswatz.github.io/mentor/",
+      code: "https://github.com/Passyswatz/mentor"
     }
+
+   
+    
   ]
+
+  const handleDemo = ( demo) => {
+    window.open(demo, '_blank', 'noopener noreferrer');
+  }
+
+  const handleCode = (code) => {
+    window.open(code, '_blank', 'noopener noreferrer');
+  }
+
   return (
     <div
       name="portfolio"
@@ -28,7 +44,7 @@ export default function Portfolio() {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,demo,code }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -36,10 +52,10 @@ export default function Portfolio() {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button  onClick={() => handleDemo(demo)} className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
                 </button>
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
+                <button  onClick={() => handleCode(code)} className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
               </div>

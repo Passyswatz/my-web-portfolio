@@ -29,6 +29,56 @@ import React from "react";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
+
+
+  const links = [
+
+    {
+        id:1,
+        child: (
+            <>
+            LinkedIn <FaLinkedin size={30}/>
+            </>
+        ),
+        href: "https://www.linkedin.com/in/paschal-ogbu-b0940b214/",
+        style: "rounded-tr-md"
+   
+      },
+
+    {
+        id:2,
+        child: (
+            <>
+            Github <FaGithub size={30}/>
+            </>
+        ),
+        href: "https://github.com/Passyswatz",
+       
+    },
+    {
+      id:3,
+      child: (
+          <>
+          Twitter <FaTwitter size={30}/>
+          </>
+      ),
+      href: "https://twitter.com/OgPaschal",
+     
+  },
+
+    
+    // {
+    //     id:4,
+    //     child: (
+    //         <>
+    //         Resume  <BsFillPersonLinesFill size={30}/>
+    //         </>
+    //     ),
+    //     href: "/resume/pdf",
+    //     style: "rounded-br-md",
+    //     download:true,
+    // },
+];
   return (
     <div id="contact" className="w-full bg-gradient-to-b from-black to-gray-800">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
@@ -49,16 +99,22 @@ const Contact = () => {
             </p>
 
             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
-              <div className="flex items-center justify-center rounded-full  bg-white shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
-                <FaLinkedin size={25} />
-              </div>
-              <div className="flex items-center justify-center rounded-full bg-white shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
-                <FaTwitter size={25} />
-              </div>
-              
-              <div className="flex items-center justify-center rounded-full bg-white shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
-                <FaGithub size={25} />
-              </div>
+
+             
+              {links.map(({id,child, href}) => (
+                <div 
+                key={id} className="flex items-center justify-center rounded-full  bg-white shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                     <a
+                  href={href}
+                  className='flex justify-between items-center w-full'
+                  // download={download}
+                  target='_blank'
+                  rel="noreferrer"
+                >
+                  {child}
+                </a>
+              </div>))}
+           
             </div>
           </div>
 
