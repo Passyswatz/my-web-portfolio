@@ -1,6 +1,9 @@
 import React from 'react'
 import Moviesearch from "../assests/portfolio/moviesearch.JPG"
  import Statpreview from "../assests/portfolio/statpreview-frontendmentor.JPG"
+ import donnoImage from "../assests/portfolio/donnoImage.JPG"
+ import shoeImage from "../assests/portfolio/shoeImage.JPG"
+
 
 export default function Portfolio() {
 
