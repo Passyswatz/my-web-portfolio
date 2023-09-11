@@ -37,7 +37,7 @@ const Contact = () => {
         id:1,
         child: (
             <>
-            LinkedIn <FaLinkedin size={30}/>
+             <FaLinkedin size={30}/>
             </>
         ),
         href: "https://www.linkedin.com/in/paschal-ogbu-b0940b214/",
@@ -49,7 +49,7 @@ const Contact = () => {
         id:2,
         child: (
             <>
-            Github <FaGithub size={30}/>
+             <FaGithub size={30}/>
             </>
         ),
         href: "https://github.com/Passyswatz",
@@ -59,7 +59,7 @@ const Contact = () => {
       id:3,
       child: (
           <>
-          Twitter <FaTwitter size={30}/>
+          <FaTwitter size={30}/>
           </>
       ),
       href: "https://twitter.com/OgPaschal",

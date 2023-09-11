@@ -16,8 +16,20 @@ export default function Portfolio() {
       src:Statpreview,
       demo: "https://passyswatz.github.io/mentor/",
       code: "https://github.com/Passyswatz/mentor"
-    }
+    },
+    {
+      id:3,
+      src: donnoImage,
+      demo: "https://donno.netlify.app/",
+      code: "https://github.com/Passyswatz/donnoh-web-app"
+    },
 
+    {
+      id:4,
+      src: shoeImage,
+      demo: "https://paschalshoeapp.netlify.app/",
+      code: "https://github.com/Passyswatz/shoe-collections"
+    }
    
     
   ]
