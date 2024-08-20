@@ -58,7 +58,7 @@ const Contact = () => {
 ];
   return (
     <div id="contact" className="w-full bg-gradient-to-b from-black to-gray-800">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+      <div className="max-w-screen-xl mx-auto p-4 text-center md:text-left">
       <div className=' mt-20'>
       <p  className=' text-4xl font-bold inline border-b-4 text-white  border-gray-500'>Contact</p>  
 </div>
