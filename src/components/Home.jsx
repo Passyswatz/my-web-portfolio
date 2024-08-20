@@ -6,7 +6,7 @@ export default function Home() {
   return (
     
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 md:flex-row ' >
-      <div className='max-w-screen-lg mx-auto flex flex-col pt-60 items-center justify-center h-full px-4 md:flex-row '>
+      <div className='max-w-screen-lg mx-auto flex flex-col  items-center justify-center  px-4 md:flex-row '>
         <div className='mt-40 flex flex-col justify-center h-full '>
           <h2 className=' text-4xl  sm:text-5xl font-bold text-white  '> I'm Paschal Og - your dedicated Frontend Developer</h2>
           <p className='text-white py-4 max-w-md'>My expertise lies in crafting cutting-edge mobile applications and websites that set trends and captivate users. I thrive on collaborative development, 
