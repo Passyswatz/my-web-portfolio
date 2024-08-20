@@ -4,7 +4,11 @@ import {Link} from 'react-scroll'
 
 export default function Navbar() {
 
-    const [nav , setNav] = useState(false)
+    const [nav , setNav] = useState(false);
+
+    const closeMenu = () => {
+        setNav(false); //close the menu when a link is clicked
+    }
 
     const links = [
         {
@@ -32,7 +36,7 @@ export default function Navbar() {
   return (
     <div  className='flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed'>
         <div >
-            <h1 className='text-4xl ml-2'>Paschal Og</h1>
+            <h1 className='text-4xl ml-2'>Paschal Ogbu</h1>
         </div>
 
         <ul className='hidden md:flex'>
@@ -41,7 +45,7 @@ export default function Navbar() {
              <li key={id} 
              className='px-4 cursor-pointer capitalize font-medium 
              text-white hover:scale-105 duration-200'>
-             <Link to={link} smooth duration={500}>{link}</Link>
+             <Link to={link} smooth duration={500} onClick={closeMenu}>{link}</Link>
              </li>
          ))}
 
@@ -58,7 +62,7 @@ export default function Navbar() {
                  <li key={id} 
                  className='px-4 cursor-pointer capitalize py-6 
                  text-4xl'>
-                  <Link to={link} smooth duration={500}>{link}</Link>
+                  <Link to={link} smooth duration={500} onClick={closeMenu}>{link}</Link>
                  </li>
     
              ))}

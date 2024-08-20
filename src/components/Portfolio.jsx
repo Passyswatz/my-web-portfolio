@@ -51,7 +51,7 @@ export default function Portfolio() {
       className=" bg-gradient-to-b from-black to-gray-800   w-full md:h-screen text-white md:flex-row" 
     >
       <div className="max-w-screen-lg  p-4 mx-auto flex flex-col justify-center w-full ">
-        <div className="pb-8 mt-40">
+        <div className="pb-8 mt-20">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
