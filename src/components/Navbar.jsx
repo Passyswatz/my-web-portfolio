@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <div  className='flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed'>
         <div >
-            <h1 className='text-4xl ml-2'>Paschal Ogbu</h1>
+            <h1 className='text-4xl ml-2'>Paschal O.</h1>
         </div>
 
         <ul className='hidden md:flex'>

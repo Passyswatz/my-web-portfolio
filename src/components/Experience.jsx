@@ -57,8 +57,8 @@ export default function Experience() {
 
   return (
     <div name="experience" className='bg-gradient-to-b from-gray-800 to-black w-full h-screen md:flex-row'>
-<div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full w-full text-white'>
-    <div className='mt-40'>
+<div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center  w-full text-white'>
+    <div className='mt-20'>
         <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Experience</p>
         <p className='py-6'>These are some of the technology I have worked with </p>
     </div>
